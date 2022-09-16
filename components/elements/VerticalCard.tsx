@@ -16,7 +16,12 @@ const VerticalCard = ({
       <div
         className={`h-[${imgHeight}px] w-[${imgWidth}px] overflow-hidden rounded-md relative`}
       >
-        <Image src={image} height={imgHeight} width={imgWidth} />
+        <Image
+          src={image}
+          height={imgHeight}
+          width={imgWidth}
+          alt="img_holder"
+        />
 
         {isLocked && (
           <div className="absolute p-2 flex items-center shrink-0 bg-white rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

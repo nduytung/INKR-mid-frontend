@@ -33,7 +33,7 @@ const AboutThis = () => {
           }`}
         >
           Kasane is an ugly girl who is severely bullied by her classmates
-          because of her appearance; making things worse, Kasane's mother was a
+          because of her appearance; making things worse, Kasanes mother was a
           beautiful actress to whom Kasane is a dark contrast, even though she
           is as talented as her mother. However, there is nothing to do with
           this.
@@ -45,8 +45,10 @@ const AboutThis = () => {
           <div className="flex gap-2">
             {new Array(5).fill(0).map((item, index) => (
               <Image
+                key={index}
                 width={84}
                 height={126}
+                alt="cover"
                 src={`/img/suggest-cover-${index + 1}.svg`}
               />
             ))}

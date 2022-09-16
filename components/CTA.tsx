@@ -13,7 +13,7 @@ const CTA = () => {
         </p>
       </section>
 
-      <Image src="/img/qrcode.svg" height={100} width={100} />
+      <Image src="/img/qrcode.svg" height={100} width={100} alt="qr_code" />
     </SectionWrapper>
   );
 };

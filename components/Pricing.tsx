@@ -29,7 +29,12 @@ const Pricing = () => {
               </article>
               <div className="rounded-md bg-[#313131] text-gray-200  flex gap-2 items-center text-lg py-2 px-3">
                 <span className="">
-                  <Image src="/icon/coin.svg" height={18} width={18} />
+                  <Image
+                    src="/icon/coin.svg"
+                    height={18}
+                    width={18}
+                    alt="coin"
+                  />
                 </span>
                 35
               </div>
@@ -53,7 +58,12 @@ const Pricing = () => {
                   </div>
                   <div className=" bg-[#313131] text-gray-200  flex gap-2 items-center text-lg py-2 px-3">
                     <span className="">
-                      <Image src="/icon/coin.svg" height={18} width={18} />
+                      <Image
+                        src="/icon/coin.svg"
+                        height={18}
+                        width={18}
+                        alt="coin"
+                      />
                     </span>
                     <span className="line-through text-gray-500 text-sm">
                       35

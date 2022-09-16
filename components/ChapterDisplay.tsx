@@ -39,9 +39,10 @@ const ChapterDisplay = () => {
         </div>
       </section>
 
-      {CHAPTER_LIST.map((item) => {
+      {CHAPTER_LIST.map((item, index) => {
         return (
           <VerticalCard
+            key={index}
             classname="hover:bg-[#1f1f1f] rounded-md pyy-3"
             image="/img/chapter-cover.svg"
             imgHeight={62}
@@ -55,7 +56,12 @@ const ChapterDisplay = () => {
               {item.isLocked ? (
                 <div className="text-gray-200  flex gap-2 items-center text-lg">
                   <span className="">
-                    <Image src="/icon/coin.svg" height={18} width={18} />
+                    <Image
+                      src="/icon/coin.svg"
+                      height={18}
+                      width={18}
+                      alt="coin"
+                    />
                   </span>
                   5
                 </div>

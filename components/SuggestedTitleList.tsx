@@ -8,9 +8,9 @@ const SuggestedTitle = () => {
   return (
     <SectionWrapper>
       <Heading type="medium">Related Titles </Heading>
-      {new Array(3).fill(0).map(() => {
+      {new Array(3).fill(0).map((item, index) => {
         return (
-          <main className="mb-2 mt-3">
+          <main className="mb-2 mt-3" key={index}>
             <VerticalCard
               image="/img/related-cover.png"
               imgHeight={120}

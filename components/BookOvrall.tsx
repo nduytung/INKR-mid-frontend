@@ -27,7 +27,12 @@ const BookOvrall = () => {
     <SectionWrapper classname="flex justify-between">
       <div className="flex gap-6 ">
         <article className="flex items-center">
-          <Image src={"/img/kasane.svg"} width={190} height={270} />
+          <Image
+            src={"/img/kasane.svg"}
+            width={190}
+            height={270}
+            alt="cover_img"
+          />
         </article>
         <article className="text-gray-400 flex flex-col justify-between items-start h-full">
           <section>
