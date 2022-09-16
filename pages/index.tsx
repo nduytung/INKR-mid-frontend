@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "antd/dist/antd.css";
 import { Col, Layout, Row } from "antd";
 import { NextPage } from "next";
@@ -6,11 +6,15 @@ import { NextPage } from "next";
 import BookOvrall from "../components/BookOvrall";
 import AboutThis from "../components/AboutThis";
 import Pricing from "../components/Pricing";
-import ChapterDisplay from "../components/ChapterDisplay";
-import SuggestedTitle from "../components/SuggestedTitleList";
-import CommentList from "../components/CommentList";
-import CTA from "../components/CTA";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const CTA = dynamic(() => import("../components/CTA"));
+const CommentList = dynamic(() => import("../components/CommentList"));
+const ChapterDisplay = dynamic(() => import("../components/ChapterDisplay"));
+const SuggestedTitle = dynamic(
+  () => import("../components/SuggestedTitleList")
+);
 
 const { Content } = Layout;
 
@@ -32,7 +36,9 @@ const Home: NextPage = () => (
                   <Pricing />
                 </Col>
                 <Col span={24}>
-                  <ChapterDisplay />
+                  <Suspense fallback={<p>Loading...</p>}>
+                    <ChapterDisplay />
+                  </Suspense>
                 </Col>
               </Row>
             </Col>
@@ -42,13 +48,19 @@ const Home: NextPage = () => (
                   <AboutThis />
                 </Col>
                 <Col span={24}>
-                  <SuggestedTitle />
+                  <Suspense fallback={<p>Loading...</p>}>
+                    <SuggestedTitle />
+                  </Suspense>
                 </Col>
                 <Col span={24}>
-                  <CommentList />
+                  <Suspense fallback={<p>Loading...</p>}>
+                    <CommentList />
+                  </Suspense>
                 </Col>
                 <Col span={24}>
-                  <CTA />
+                  <Suspense fallback={<p>Loading...</p>}>
+                    <CTA />
+                  </Suspense>
                 </Col>
               </Row>
             </Col>

@@ -73,6 +73,7 @@ const Pricing = () => {
       <p className="text-gray-500 mt-4 text-center mb-0">
         Want to read for free?
         <a className="text-gray-400" href="#">
+          {" "}
           Learn more
         </a>
       </p>
