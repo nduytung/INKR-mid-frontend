@@ -26,6 +26,13 @@ a {
   }
 }
 
+.custom-tag {
+  background-color: "transparent";
+  border-color: "gray";
+  color: "gray";
+  font-size: 12;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -12,3 +12,5 @@ export const CHAPTER_LIST = [
   { name: "Chapter 9", isLocked: true },
   { name: "Chapter 10", isLocked: true },
 ];
+
+export const GET_RANDOM_IMG = "https://joeschmoe.io/api/v1/random";

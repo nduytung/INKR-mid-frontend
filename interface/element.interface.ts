@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react";
 import { ISectionWrapper } from "./components.interface";
 
 export interface IHeading1 extends ISectionWrapper {
@@ -15,4 +16,13 @@ export interface IVerticalCard {
 
 export interface IPrimaryButton {
   children: React.ReactNode;
+}
+
+export interface IOutlineButton extends IPrimaryButton {
+  callback?: MouseEventHandler<HTMLButtonElement> | undefined;
+}
+
+export interface IPromotionBlock {
+  children: React.ReactNode | React.ReactNode[];
+  span: number;
 }
