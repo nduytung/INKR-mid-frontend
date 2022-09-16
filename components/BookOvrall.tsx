@@ -17,7 +17,7 @@ const BookOvrall = () => {
   const handleShare = async () => {
     (await navigator) &&
       navigator?.share({
-        title: "INRK Comics | Duy Tung",
+        title: "INKR Comics | Duy Tung",
         text: "Hire me!",
         url: "https://github.com/nduytungs",
       });
