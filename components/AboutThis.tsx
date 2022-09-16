@@ -107,7 +107,7 @@ const AboutThis = () => {
       {isHiding && (
         <p
           onClick={() => setIsHiding((state) => !state)}
-          className="mx-auto text-center"
+          className="mx-auto text-center m-0 pt-3"
           role={"button"}
         >
           Show More
