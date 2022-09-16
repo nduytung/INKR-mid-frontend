@@ -41,6 +41,7 @@ const BookOvrall = () => (
                   textTransform: "uppercase",
                   color: "gray",
                   fontSize: 12,
+                  marginBottom: 8,
                 }}
                 key={index}
               >

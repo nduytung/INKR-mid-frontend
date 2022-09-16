@@ -9,6 +9,8 @@ const PrimaryButton = ({ children }: IPrimaryButton) => {
         backgroundColor: "#ffd608",
         color: "black",
         borderRadius: 8,
+        paddingTop: 4,
+        paddingBottom: 4,
       }}
     >
       {children}

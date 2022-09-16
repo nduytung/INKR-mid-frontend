@@ -39,12 +39,36 @@ const Pricing = () => {
             </div>
           </Col>
           <Col span={24}>
-            <div className="p-5 border border-black">
-              <Heading type="small">
-                <p className="text-[#a379ff] m-0">Save money with INKR Extra</p>
-              </Heading>
-              <p>Instant access to all chapters • No Ad • Extra saving</p>
-            </div>
+            <section className="flex items-center justify-between p-5 border border-black">
+              <div>
+                <Heading type="small">
+                  <p className="text-[#a379ff] m-0">
+                    Save money with INKR Extra
+                  </p>
+                </Heading>
+                <p>Instant access to all chapters • No Ad • Extra saving</p>
+              </div>
+              <div>
+                <div className="flex rounded-md overflow-hidden">
+                  <div className=" bg-[#6525fc] text-white  text-lg py-2 px-3">
+                    -50%
+                  </div>
+                  <div className=" bg-[#313131] text-gray-200  flex gap-2 items-center text-lg py-2 px-3">
+                    <span className="">
+                      <Image src="/icon/coin.svg" height={18} width={18} />
+                    </span>
+                    <span className="line-through text-gray-500 text-sm">
+                      {" "}
+                      35{" "}
+                    </span>
+                    18
+                  </div>
+                </div>
+                <p className="italic text-gray-500 text-xs text-end mt-2">
+                  Saving rates may vary
+                </p>
+              </div>
+            </section>
           </Col>
         </Row>
       </div>
