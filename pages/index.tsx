@@ -31,7 +31,7 @@ import BookOvrall from "../components/BookOvrall";
 import AboutThis from "../components/AboutThis";
 import Pricing from "../components/Pricing";
 import ChapterDisplay from "../components/ChapterDisplay";
-import SuggestedTitle from "../components/SuggestedTitle";
+import SuggestedTitle from "../components/SuggestedTitleList";
 import CommentList from "../components/CommentList";
 import CTA from "../components/CTA";
 
