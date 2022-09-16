@@ -1,40 +1,63 @@
+import { BellOutlined, SortAscendingOutlined } from "@ant-design/icons";
 import React from "react";
+import { CHAPTER_LIST } from "../constance/dataContances";
 import Heading from "./elements/Heading";
 import VerticalCard from "./elements/VerticalCard";
 import SectionWrapper from "./layout-components/SectionWrapper";
+import Image from "next/image";
 
 const ChapterDisplay = () => {
   return (
     <SectionWrapper>
       <Heading type="medium">Last read</Heading>
       <VerticalCard
-        classname="bg-[#1f1f1f] rounded-md my-5"
+        classname="bg-[#1f1f1f] rounded-lg my-5"
         image="/img/chapter-cover.svg"
-        imgHeight={60}
-        imgWidth={70}
+        imgHeight={62}
+        imgWidth={78}
       >
         <div className="text-gray-400">
-          <p>Chapter 1</p>
-          <p>Last read 2 days ago</p>
+          <p className="mb-0">Chapter 1</p>
+          <p className="font-thin text-sm">Last read 2 days ago</p>
         </div>
       </VerticalCard>
 
       <section className="flex items-center justify-between">
-        <Heading type="medium"> 10 chapters </Heading>
-        <p className="text-gray-400">New chapter every Thursday </p>
+        <div>
+          <Heading type="medium"> 10 chapters </Heading>
+          <p className="text-gray-400">New chapter every Thursday </p>
+        </div>
+        <div className="flex gap-3">
+          <button className="border border-gray-400 rounded-md p-2 flex items-center">
+            <BellOutlined />
+          </button>
+          <button className="border border-gray-400 rounded-md p-2 flex items-center">
+            <SortAscendingOutlined />
+          </button>
+        </div>
       </section>
 
-      {new Array(10).fill(0).map((item, index) => {
+      {CHAPTER_LIST.map((item, index) => {
         return (
           <VerticalCard
-            classname="hover:bg-[#1f1f1f] rounded-md my-5"
+            classname="hover:bg-[#1f1f1f] rounded-md pyy-3"
             image="/img/chapter-cover.svg"
-            imgHeight={40}
-            imgWidth={50}
+            imgHeight={62}
+            imgWidth={78}
+            isLocked={item.isLocked}
           >
             <div className="flex-1 flex justify-between">
-              <p className="text-gray-400">Chapter {index + 1}</p>
-              <p className=" text-gray-400 font-semibold">FREE</p>
+              <p className="text-gray-400"> {item.name} </p>
+              {item.isLocked ? (
+                <div className="text-gray-200  flex gap-2 items-center text-lg">
+                  <span className="">
+                    <Image src="/icon/coin.svg" height={18} width={18} />
+                  </span>
+                  5
+                </div>
+              ) : (
+                <p className=" text-gray-400 font-semibold">FREE</p>
+              )}
             </div>
           </VerticalCard>
         );

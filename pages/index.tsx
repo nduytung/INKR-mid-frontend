@@ -51,7 +51,7 @@ const actions = [
 ];
 
 const Home: NextPage = () => (
-  <Layout className="layout ">
+  <Layout className="layout text-gray-400">
     <Header>
       <div className="logo" />
       <Menu
@@ -68,7 +68,7 @@ const Home: NextPage = () => (
       />
     </Header>
     <Content className="py-10 bg-black">
-      <main className="site-layout-content text-red-500 container mx-auto">
+      <main className="site-layout-content text-gray-400 container mx-auto">
         <Row gutter={24}>
           <Col span={16}>
             <Row gutter={[0, 24]}>
@@ -84,17 +84,19 @@ const Home: NextPage = () => (
             </Row>
           </Col>
           <Col span={8}>
-            <Row>
-              <AboutThis />
-            </Row>
-            <Row>
-              <SuggestedTitle />
-            </Row>
-            <Row>
-              <CommentList />
-            </Row>
-            <Row>
-              <CTA />
+            <Row gutter={[0, 24]}>
+              <Col span={24}>
+                <AboutThis />
+              </Col>
+              <Col span={24}>
+                <SuggestedTitle />
+              </Col>
+              <Col span={24}>
+                <CommentList />
+              </Col>
+              <Col span={24}>
+                <CTA />
+              </Col>
             </Row>
           </Col>
         </Row>

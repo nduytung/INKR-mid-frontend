@@ -4,9 +4,9 @@ import { IHeading1 } from "../../interface/element.interface";
 const Heading = ({ children, classname, type }: IHeading1) => {
   return (
     <h1
-      className={`text-white font-medium} ${classname} ${
+      className={`text-gray-300 font-medium mb-1 ${classname} ${
         type === "large" && "text-3xl"
-      } ${type === "medium" && "text-3xl"} ${type === "small" && "text-xl"}`}
+      } ${type === "medium" && "text-xl"} ${type === "small" && "text-base"}`}
     >
       {children}
     </h1>

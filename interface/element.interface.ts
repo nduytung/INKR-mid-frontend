@@ -9,5 +9,10 @@ export interface IVerticalCard {
   imgWidth: number;
   imgHeight: number;
   image: string;
+  isLocked?: boolean;
   classname?: string;
+}
+
+export interface IPrimaryButton {
+  children: React.ReactNode;
 }
