@@ -26,9 +26,9 @@ const Home: NextPage = () => (
     <Layout className="layout text-gray-400">
       <Content className="py-10 bg-black">
         <main className="site-layout-content text-gray-400 container mx-auto">
-          <Row gutter={24}>
-            <Col span={16}>
-              <Row gutter={[0, 24]}>
+          <Row gutter={{ lg: 32, xxl: 24 }}>
+            <Col lg={{ span: 15 }} xl={{ span: 16 }}>
+              <Row gutter={[0, { lg: 32, xxl: 24 }]}>
                 <Col span={24}>
                   <BookOvrall />
                 </Col>
@@ -42,8 +42,8 @@ const Home: NextPage = () => (
                 </Col>
               </Row>
             </Col>
-            <Col span={8}>
-              <Row gutter={[0, 24]}>
+            <Col lg={{ span: 9 }} xl={{ span: 8 }}>
+              <Row gutter={[0, { lg: 32, xxl: 24 }]}>
                 <Col span={24}>
                   <AboutThis />
                 </Col>

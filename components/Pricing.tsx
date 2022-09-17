@@ -18,7 +18,11 @@ const Pricing = () => {
 
           <PromotionBlock span={12}>
             <p className="mb-0">LOCKED</p>
-            <Heading type="small">7 chapters (5/chapter)</Heading>
+            <Heading type="small" classname="flex items-center">
+              7 chapters ({" "}
+              <Image src="/icon/coin.svg" height={18} width={18} alt="coin" /> 5
+              / chapter)
+            </Heading>
           </PromotionBlock>
 
           <PromotionBlock span={24}>
@@ -28,14 +32,7 @@ const Pricing = () => {
                 <p>Instant access to all chapters • No Ad </p>
               </article>
               <div className="rounded-md bg-[#313131] text-gray-200  flex gap-2 items-center text-lg py-2 px-3">
-                <span className="">
-                  <Image
-                    src="/icon/coin.svg"
-                    height={18}
-                    width={18}
-                    alt="coin"
-                  />
-                </span>
+                <Image src="/icon/coin.svg" height={18} width={18} alt="coin" />
                 35
               </div>
             </div>
@@ -57,14 +54,12 @@ const Pricing = () => {
                     -50%
                   </div>
                   <div className=" bg-[#313131] text-gray-200  flex gap-2 items-center text-lg py-2 px-3">
-                    <span className="">
-                      <Image
-                        src="/icon/coin.svg"
-                        height={18}
-                        width={18}
-                        alt="coin"
-                      />
-                    </span>
+                    <Image
+                      src="/icon/coin.svg"
+                      height={18}
+                      width={18}
+                      alt="coin"
+                    />
                     <span className="line-through text-gray-500 text-sm">
                       35
                     </span>

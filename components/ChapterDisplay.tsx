@@ -54,17 +54,15 @@ const ChapterDisplay = () => {
                 {item.name}
               </p>
               {item.isLocked ? (
-                <div className="text-gray-200  flex gap-2 items-center text-lg">
-                  <span className="">
-                    <Image
-                      src="/icon/coin.svg"
-                      height={18}
-                      width={18}
-                      alt="coin"
-                    />
-                  </span>
+                <p className="text-gray-200  flex gap-2 items-center text-lg">
+                  <Image
+                    src="/icon/coin.svg"
+                    height={18}
+                    width={18}
+                    alt="coin"
+                  />
                   5
-                </div>
+                </p>
               ) : (
                 <p className=" text-gray-400 font-semibold">FREE</p>
               )}

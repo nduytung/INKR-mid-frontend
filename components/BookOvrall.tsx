@@ -37,7 +37,7 @@ const BookOvrall = () => {
         <article className="text-gray-400 flex flex-col justify-between items-start h-full">
           <section>
             <Heading type="large"> Kasane</Heading>
-            <p className="text-base">By Kodansha</p>
+            <p className="text-base mb-1">By Kodansha</p>
             <p>Drama • 10 Chapters</p>
             <div className="flex gap-2 text-sm">
               <span className="flex items-center gap-1">
@@ -47,7 +47,7 @@ const BookOvrall = () => {
                 <LikeOutlined /> 15,863
               </span>
             </div>
-            <div className="mt-6">
+            <div className="mt-4">
               <TagList tagList={TAG_LIST} />
             </div>
           </section>
